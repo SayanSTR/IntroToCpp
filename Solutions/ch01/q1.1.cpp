@@ -5,13 +5,15 @@
 #include <simplecpp>
 main_program
 {
-	int nsides;
+	int nsides, length;
 	cout << "Type in the number of sides: ";
 	cin >> nsides;
+	cout << "Type in the length of sides: ";
+	cin >> length;
 	turtleSim();
 	repeat(nsides) {
-		forward(50);	// Each side will have length 50 pixels
-		left(360.0/nsides); // Be ause sum(exterior angles of a polygon) = 360
+		forward(length);	// Each side will have length "length" pixels
+		left(360.0/nsides); // Because sum(exterior angles of a polygon) = 360
 	}
 	wait(5);
 }
