@@ -1,4 +1,4 @@
-/* 1. Modify the program given in the text so that it asks for the side length of the 
+/* 1. Modify the program given in the text so that it asks for the side length of the
  * polygon to be drawn in addition to asking for the number of sides.
  */
 
@@ -17,4 +17,3 @@ main_program
 	}
 	wait(5);
 }
-
