@@ -1,5 +1,3 @@
 {
-    "files.associations": {
-        "simplecpp": "cpp"
-    }
+    "cmake.configureOnOpen": false
 }
