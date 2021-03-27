@@ -5,6 +5,7 @@
 
 #include <simplecpp>
 main_program{
+    // Read input
     float x; cout<<"For ln(x) x(positive and non-zero) = "; cin >> x;   // will calculate ln(x)
     while (x<=0)
     {float x; cout<<"Invalid input! enter value again.\nFor ln(x) x(must be positive and non-zero) = "; cin >> x;} 
@@ -13,6 +14,7 @@ main_program{
     while (n<=0 || n%2!=0)
     {cout<<"Invalid input! enter again.\nDivisions(must be even and non-zero) = "; cin >> n;}
     
+    // Simpson's Rule
     float w = (x-1)/n;  // width of each rectangle
     float area=0;       // will contain ln(x) at the end.
     for(int i=0; i <= n; i++)
@@ -23,6 +25,7 @@ main_program{
     }
     area*= (w/3);   // for (h/3)*[f(a)+...+f(b)]
 
+    // Output
     cout << "Natural log, from integral: "<< area << endl;
     cout<<"Natural log, built-in function: "<< log(x)<<endl;
 }

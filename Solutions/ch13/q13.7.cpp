@@ -1,4 +1,4 @@
-/* 7. Write a program whi h takes as input two vectors (as defined in mathematics/physics)
+/* 7. Write a program which takes as input two vectors (as defined in mathematics/physics)
  * - represent them using arrays - and prints their dot product. Make this into a function.
  */
 
