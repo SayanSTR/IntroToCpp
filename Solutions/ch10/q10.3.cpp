@@ -45,7 +45,7 @@ int main()
 {
     int a,b,c;
     // check gcd
-    // for(int i=0; i<4; i++) {
+    // for(int i=0; i<4; i++) { //
     //     cin>>a>>b;
     //     cout<<extended_gcd(a,b,x,y)<<endl;
     // }
