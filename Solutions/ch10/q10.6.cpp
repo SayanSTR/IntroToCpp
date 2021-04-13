@@ -5,3 +5,17 @@
  * cases for this? Make sure your answer matches the branches in the trees of Figure 10.5.
  * (b) Argue using induction that B(n) >= 2^(n/2)for n >= 3.
  */
+
+#include <iostream>
+using namespace std;
+
+int B(int n) {
+    if(n==1 || n==2) return 0;
+    else return B(n-1) +1 + B(n-2) +1;
+}
+
+int main()
+{
+    int n; cout<<"N: "; cin>>n;
+    cout<<B(n)<<endl;
+}
