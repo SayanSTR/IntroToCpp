@@ -72,23 +72,16 @@ int main()
     cout<<"Length of root branch of 1st tree: "; cin>>length;
     cout<<"Angle between root branches of 1st tree: "; cin>>angle;
     cout<<"Shrinkage : "; cin>>shrinkage;
-
-    int start, hb, wb;
+    
+    /* int start, hb, wb;
     cout<<"Height of 2nd tree: "; cin>>hb;
     cout<<"Width of 2nd tree: "; cin>>wb;
-    cout<<"Click on root for 2nd tree by line\n";
-    
+    cout<<"Click on root for 2nd tree by line\n"; */
 
     initCanvas();
     Turtle t; t.left(90);
-    start = getClick();
-
+    //start = getClick();
     treeTurtle(t, h, length, angle, shrinkage, n);
-    t.hide();
-    wait(3);
-
-    
-    n=1;
-    treeLine(h, hb, wb, start/65536, start%65536, n);
+    //t.hide();
     wait(5);
 }
