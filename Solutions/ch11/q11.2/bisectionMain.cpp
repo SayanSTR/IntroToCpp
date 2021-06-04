@@ -10,7 +10,8 @@ double g(double x){
     return sin(x) - 0.3;
 }
 
-double bisection(double xL, double xR, double epsilon, double (*pf)(double x))
+template <typename T>
+T bisection(double xL, double xR, double epsilon, T (*func)(T x))
 // precondition: f(xL),f(xR) have different signs. ( >0 and <=0).
 {
     bool xL_is_positive = (*pf)(xL) > 0;
