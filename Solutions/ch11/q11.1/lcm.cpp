@@ -15,3 +15,4 @@ int gcd(int m, int n){  // definition of gcd
 int lcm(int m, int n){
     return m*n/gcd(m,n);
 }
+// check
