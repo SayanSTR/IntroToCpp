@@ -43,8 +43,11 @@ struct V3
         return V3((y*b.z)-(z*b.y), (z*b.x)-(x*b.z), (x*b.y)-(y*b.x));
     }
 
-    
 };
+
+V3 operator*(V3 v, double factor){ // scalar multiplication
+    return V3(v.x*factor, v.y*factor, v.z*factor);
+}
 
 istream &operator>>(istream &stream, V3 &v) {
     // input V3
